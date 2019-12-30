@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content ="Assignment #1 of Web Programming">
+        <link rel="stylesheet" type= "text/css" href="styles.css">
+
+        <title> Mehreen Asif Assignment # 1 </title>
+    </head>
+
+    <body>
+        <!-- htnl to create 2 versions of the form that the user order coffee from.Either user can enter information in the first form or they can enter it in the 2nd (slang) version-->
+        <img  class =img1 src="images/timhortons.jpg" alt="Tims" width= "900" height= "300">
+        <br>
+        <br>
+        <h1>Welcome to Tim Horton's</h1>
+        <section>
+            <form  action="formdata.php" method="POST">      
+
+                <h3> Give us some numbers...</h3>
+                <section>
+                    Number of Coffees:&nbsp; <input type="number" name="coffee" min="0" value="0"> 
+                    <br><br>
+                </section>
+                <section>
+                    Size:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;&nbsp;
+                    <!--size of the coffee-->
+                    <select name="size"> 
+                        <option value="Choose your size">Choose Your Size</option>
+                        <option value="Small">Small</option>                
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="ExtraLarge">Extra Large</option>
+                    </select>
+
+                    <br><br>
+                </section>
+                <section> 
+                    How many creams?: <input type="number" name="cream" min="0" max="3" value="0"> <br><br>
+                </section>
+
+                <section>
+                    How many sugars?:&nbsp; <input type="number" name="sugar" min="0" max="3" value="0"> 
+
+                    <br><br>
+                </section>
+
+                <input type="submit" name= "submit" value="Order Coffee" >
+
+            </form>
+        </section>
+        <br><br><br><br><br><br>
+        <form  action="formdata.php" method="POST">
+
+            <h3> ...or use the Slang!</h3>
+
+            <input type="number" name="coffee" min="1" value="0">
+
+            <select name="size"> 
+                <option value="Choose your size">Choose Your Size</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="ExtraLarge">Extra Large</option>
+            </select> <br> <br>
+
+            <input type="radio" name="slang" value="Regular" checked> Regular <br>
+            <input type="radio" name="slang" value="DoubleDouble"> Double Double <br>
+            <input type="radio" name="slang" value="TripleTriple"> Triple Triple <br>
+            <input type="radio" name="slang"  value="Black"> Black <br>
+            <input type="radio" name="slang"  value="Blackonesugar"> Black One Sugar <br>
+            <input type="radio" name="slang"  value="Blacktwosugar"> Black two Sugars <br>
+            <input type="radio" name="slang"  value="Blackthreesugar"> Black three Sugars 
+            <br><br>
+            <input type="submit" name= "submit"  value="Order Coffee" >
+
+
+        </form> 
+
+    </body>
+</html>	

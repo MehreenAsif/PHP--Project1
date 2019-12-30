@@ -1,0 +1,27 @@
+body{
+    background-color: #f5deb3;
+}
+
+.img1{
+
+    display:block;
+    margin-left:auto;
+    margin-top:20px;
+    margin-right:auto;
+}
+
+h1{
+
+    text-align: center;
+    font-size: 3em;
+}
+
+form{
+
+    border: thin solid;
+    margin-left:240px;
+    padding:30px;
+    width:800px;
+    box-align:center;
+
+}
